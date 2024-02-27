@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
 public class Main {
+
+    //Toplama işlemi
     static void plus() {
         Scanner scan = new Scanner(System.in);
         int number, result = 0, i = 1;
@@ -15,6 +17,7 @@ public class Main {
         System.out.println("Sonuç : " + result);
     }
 
+    // Çıkarma işlemi
     static void minus() {
         Scanner scan = new Scanner(System.in);
         System.out.print("Kaç adet sayı gireceksiniz :");
@@ -34,6 +37,7 @@ public class Main {
         System.out.println("Sonuç : " + result);
     }
 
+    //Çarpma işlemi
     static void times() {
         Scanner scan = new Scanner(System.in);
         int number, result = 1, i = 1;
@@ -55,6 +59,7 @@ public class Main {
         System.out.println("Sonuç : " + result);
     }
 
+    //Bölme işlemi
     static void divided() {
         Scanner scan = new Scanner(System.in);
         System.out.print("Kaç adet sayı gireceksiniz :");
@@ -78,6 +83,7 @@ public class Main {
         System.out.println("Sonuç : " + result);
     }
 
+    //Üs alma işlemi
     static void power() {
         Scanner scan = new Scanner(System.in);
         System.out.print("Taban değeri giriniz :");
@@ -93,6 +99,7 @@ public class Main {
         System.out.println("Sonuç : " + result);
     }
 
+    //Faktöriyel işlem
     static void factorial() {
         Scanner scan = new Scanner(System.in);
         System.out.print("Sayı giriniz :");
@@ -106,6 +113,7 @@ public class Main {
         System.out.println("Sonuç : " + result);
     }
 
+    //Dikdörtgen alanı ve çevresi hesabı
     static void rectangleArea() {
         Scanner scan = new Scanner(System.in);
         System.out.print("Dikdörtgenin uzun kenarını giriniz: ");
@@ -120,6 +128,7 @@ public class Main {
         System.out.println("Dikdörtgenin Çevresi: " + perimeter);
     }
 
+    //Mod alma işlemi
     static void mod() {
         Scanner scan = new Scanner(System.in);
         System.out.print("Bölünen sayıyı giriniz: ");
@@ -131,7 +140,7 @@ public class Main {
         System.out.println("Sonuç : " + result);
     }
 
-
+    //Menü girişi
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int select;
@@ -145,6 +154,8 @@ public class Main {
                 + "8- Dikdörtgen Alan ve Çevre Hesabı\n"
                 + "0- Çıkış Yap";
 
+    //Switch case ile menü işlemleri
+    //do-while
         do {
             System.out.println(menu);
             System.out.print("Lütfen bir işlem seçiniz :");
